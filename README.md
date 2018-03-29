@@ -1,5 +1,5 @@
 <h1>Instalando Gems do Ruby</h1>
-gem install bundler
+gem install bundler<br />
 bundle
 
 <h1>Executando o Projeto ML</h1>
