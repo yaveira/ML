@@ -1,4 +1,8 @@
-Executando o Projeto ML
+<h1>Instalando Gems do Ruby</h1>
+gem install bundler
+bundle
+
+<h1>Executando o Projeto ML</h1>
 
 1. Faça um clone do projeto:
    git clone https://github.com/yaveira/ML.git
