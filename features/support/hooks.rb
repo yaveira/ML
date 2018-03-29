@@ -1,11 +1,9 @@
-require 'watir'
-
-Before do |scenario|
-  #DataMagic.load_for_scenario(scenario)
-  #@browser = Watir::Browser.new :chrome
-end
-
-
-After do
-  #@browser.close
+After do |scenario|
+    if scenario.passed?
+      page.driver.browser.save_screenshot("#{scenario.__id__}.png")
+    end
+    
+    Capybara.current_session.driver.browser.manage.delete_all_cookies
+    Capybara.current_session.driver.quit
+    Capybara.current_session.driver.browser.manage.window.maximize
 end

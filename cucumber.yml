@@ -1,1 +1,11 @@
-default: --no-source --color --format pretty
+#Execução do Desafio 1 + report em HTML.
+default_desafio1: -p html_report -t @desafio1
+
+#Execução do Desafio 2 + report em HTML.
+default_desafio2: -p html_report -t @desafio2
+
+#Execução dos desafios + report em HTML.
+default_completa: -p html_report
+
+#Gerar status report em HTML.
+html_report: --format progress --format html --out=features_report.html
