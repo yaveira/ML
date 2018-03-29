@@ -4,8 +4,7 @@ bundle
 
 <h1>Executando o Projeto ML</h1>
 
-1. Faça um clone do projeto:
-   git clone https://github.com/yaveira/ML.git
+1. Faça um clone do projeto:<br /> git clone https://github.com/yaveira/ML.git
 
 2. Execução do Desafio 1 + report em HTML:<br /> cucumber -p default_desafio1
 
